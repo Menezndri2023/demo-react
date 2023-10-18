@@ -1,33 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="grandEmbal">
+      <div className="firstEmbal">
+        <div className="pourT">
+        <h1>titre grandement ecrit</h1>
+        </div>
+        <div className="pourR">
+        <input placeholder='entrer' type="text" />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+
+      <div className="secondEmbal">
+        <div className="embal">
+        <div id='img'>
+        <img src="public/illustration-vectorielle-du-travail-d-equipe-en-entreprise-l-equipe-de-personnages-plats-de-dessin-anime-travaille-sur-l-analyse-du-rapport-d-analyse-financiere-la-solution-de-recherche-partenaria.jpg" alt="imgphoto" />
+        </div>
+        <div className="item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, vel!</p>
+        <button id='bouton'>premium</button>
+        </div>
+        </div>
+        <div className="embal">
+        <div id='img'>
+        <img src="public/illustration-concept-entreprise_114360-2581.avif" alt="imag 2" />
+        </div>
+        <div className="item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, vel!</p>
+        <button id='bouton'>medium</button>
+        </div>
+        </div>
+        <div className="embal">
+        <div id='img'>
+        <img src="public/18984653-icone-de-batiment-dans-le-style-comique-illustration-de-vecteur-de-dessin-anime-de-gratte-ciel-sur-fond-blanc-isole-concept-d-entreprise-d-effet-d-eclaboussure-d-architecture-vectoriel.jpg" alt="image 3" />
+        </div>
+        <div className="item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, vel!</p>
+        <button id='bouton'>forex</button>
+        </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+    </div>
+        
     </>
   )
 }
